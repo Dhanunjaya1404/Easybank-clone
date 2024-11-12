@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers Template</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: #333;
+}
+
+.hero {
+    background-image: url('./images/pexels-pixabay-210574.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .search-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-field, .search-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div   class="logo">CAREERS  <img src="./images/logo.svg2.svg"></div>
+       
+        <nav class="nav-links">
+            <ul>
+                <li>Home</li>
+                <li>Job Listings</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <a href="#" class="contact-btn">Contact Us</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+
+    
+  
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>A Powerful Career Website Template</h1>
+            <p>Find your dream jobs in our powerful career website template.</p>
+            <form class="search-form">
+                <input type="text" placeholder="Job title, keywords..." class="input-field">
+                <select class="input-field">
+                    <option>Anywhere</option>
+                    <option>Remote</option>
+                    <option>New York</option>
+                    <option>San Francisco</option>
+                </select>
+                <select class="input-field">
+                    <option>Part Time</option>
+                    <option>Full Time</option>
+                    <option>Freelance</option>
+                </select>
+                <button class="search-btn">Search Job</button>
+            </form>
+        </div>
+    </section>
+
+    
+</body>
+</html>

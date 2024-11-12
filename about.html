@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easybank - Deposits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+    color: aquamarine;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    padding: 5px;
+}
+
+.customer-service, .login {
+    background-color: #02704a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.deposit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #d4d7d8;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.book-now {
+    background-color: #179f7d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.know-more {
+    display: block;
+    margin-top: 10px;
+    color: #119137;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #73bd0c;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 750px) {
+   
+    .navbar {
+        display: none;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .deposit-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .hamburger {
+        display: flex; 
+        margin-left: 200px;
+    }
+
+    .navbar.active {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .header, .header-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./images/logo 2.svg" alt="Easybank Logo">
+        </div>
+        <!-- <div class="logo">EASY Bank</div> -->
+        <nav class="navbar" id="navbar">
+            <a href="#">Accounts</a>
+            <a href="#">Deposits</a>
+            <a href="#">Loans</a>
+            <a href="#">Wealth & Insure</a>
+            <a href="#">Payments</a>
+            <a href="#">Cards</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header-right">
+            <input type="text" placeholder="What are you looking for?" class="search-bar">
+            <button class="customer-service">Customer Service</button>
+            <button class="login">Login</button>
+        </div>
+    </header>
+    
+    <main class="content">
+        <h1>Deposits</h1>
+    <div class="deposit-cards">
+        <div class="card">
+            <img src="./deposite...jpeg" alt="Fixed Deposit" class="card-image">
+            <h2>Fixed Deposit</h2>
+            <p>Earn 7.75% p.a. on your idle funds</p>
+            <button class="book-now">Book Now</button>
+            <a href="" class="know-more">Know More</a>
+        </div>
+        <div class="card">
+            <img src="./Direct-Deposit.webp" alt="Recurring Deposit" class="card-image">
+            <h2>Recurring Deposit</h2>
+            <p>Start with as little as ₹100 per month</p>
+            <button class="book-now">Book Now</button>
+            <a href="" class="know-more">Know More</a>
+        </div>
+        <div class="card">
+            <img src="./fixed-deposit-sixteen_nine.jpg" alt="NRI Fixed Deposit" class="card-image">
+            <h2>NRI Fixed Deposit</h2>
+            <p>Get up to 7.75% on IDFC FIRST Bank NRI Fixed Deposit</p>
+            <button class="book-now">Book Now</button>
+            <a href="./deposite...jpeg" class="know-more">Know More</a>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <p>Customer care hotline: 1800 10 888</p>
+    </footer>
+
+   
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Federal Savings Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    background-color: aqua;
+   
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: #333;
+}
+
+.hero {
+    background-image: url('./images/pexels-pixabay-160994.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .nav-links ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding: 20px;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"
+              ><img src="./images/logo.svg2.svg" alt="Easybank Logo" class="logo"
+            /></a>
+          </div>
+        <nav class="nav-links">
+            <ul>
+                <li>Buy a Home</li>
+                <li>Refinance Your Home</li>
+                <li>VA Home Loans</li>
+                <li>Banking</li>
+                <li>Get Started</li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>HOME BEGINS HERE.</h1>
+            <p>Focused on Mortgages. Dedicated To Your Dreams.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">Buy a Home</a>
+                <a href="#" class="btn">Refinance Your Home</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

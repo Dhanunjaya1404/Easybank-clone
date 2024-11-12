@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easybank</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #546288;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-info {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.call-us {
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.phone-number {
+    background-color: #ff5733;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #222;
+    color: #fff;
+    /* background-image: url(./pexels-karolina-grabowska-4968634.jpg); */
+}
+
+.hero-content {
+    width: 60%;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.loan-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.loan-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loan-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.loan-form .btn {
+    background-color: #ff5733;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+   
+        display: flex;
+        margin-left: 220px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .loan-form {
+        width: 100%;
+        margin-top: 20px;
+        transform: translateY(-400px);
+    }
+
+    .phone-number {
+        padding: 5px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.svg2.svg" alt="Easybank Logo" class="logo"
+        />
+               <marquee direction="right"> <h1>Easybank</h1></marquee>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                   
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="contact-info">
+                    <span class="call-us">Call us now!</span>
+                    <span class="phone-number">+91 7386454486</span>
+                </div>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Looking for a same day loan?</h2>
+            <p>KYC (Know Your Customer) compliance is required for all loans, so banks may ask for KYC documents like PAN card and Aadhaar.</p>
+            <button class="btn">Find Out More</button>
+        </div>
+        <div class="loan-form">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your E-mail">
+                <input type="text" placeholder="Your Phone">
+                <button type="submit" class="btn">Apply for a Loan Now!</button>
+            </form>
+        </div>
+    </section>
+
+    
+</body>
+</html>
